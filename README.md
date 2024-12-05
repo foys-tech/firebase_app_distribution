@@ -6,8 +6,21 @@ This Flutter plugin detects new versions of an app host on Firebase App Distribu
 
 ```dart
 /// Checks if a new release is available and prompts the user to update
-/// if there is one.
-updateIfNewReleaseAvailable()
+/// if there is one. If user is not signed in as a tester, this method will
+/// invite the user to become a tester.
+Future<void> updateIfNewReleaseAvailable()
+
+/// Checks if a new release is available.
+Future<bool> isNewReleaseAvailable()
+
+/// Checks if tester is signed in.
+Future<bool> isTesterSignedIn()
+
+/// Sign in a tester without automatically checking for update.
+Future<void> signInTester()
+
+/// Sign out a tester without automatically checking for update.
+Future<void> signOutTester()
 ```
 
 ## Contribute
