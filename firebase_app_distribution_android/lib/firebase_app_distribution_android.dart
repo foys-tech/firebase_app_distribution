@@ -28,14 +28,6 @@ class FirebaseAppDistributionAndroid extends FirebaseAppDistributionPlatform {
   }
 
   @override
-  Stream<double> downloadUpdate() {
-    return methodChannel
-        .invokeMethod<double>('downloadUpdate')
-        .asStream()
-        .map((res) => res ?? -1);
-  }
-
-  @override
   Future<bool> isTesterSignedIn() {
     return methodChannel
         .invokeMethod<bool>('isTesterSignedIn')
@@ -45,5 +37,10 @@ class FirebaseAppDistributionAndroid extends FirebaseAppDistributionPlatform {
   @override
   Future<void> signInTester() {
     return methodChannel.invokeMethod<void>('signInTester');
+  }
+
+  @override
+  Future<void> signOutTester() {
+    return methodChannel.invokeMethod<void>('signOutTester');
   }
 }

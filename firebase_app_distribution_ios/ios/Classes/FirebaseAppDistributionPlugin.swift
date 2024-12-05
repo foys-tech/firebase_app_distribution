@@ -38,14 +38,14 @@ public class FirebaseAppDistributionPlugin: NSObject, FlutterPlugin {
                 rootViewController.present(uialert, animated: true, completion: nil)
             }
           })
-          
+
           result(nil)
 
       case "isNewReleaseAvailable":
           if (!AppDistribution.appDistribution().isTesterSignedIn) {
               return
           }
-          
+
           AppDistribution.appDistribution().checkForUpdate(completion: { release, error in
               if error != nil {
                   // Handle error
@@ -56,46 +56,27 @@ public class FirebaseAppDistributionPlugin: NSObject, FlutterPlugin {
                 result(false)
                 return
               }
-              
+
               result(true)
           })
-          
-      case "downloadUpdate":
-          if (!AppDistribution.appDistribution().isTesterSignedIn) {
-              return
-          }
-          
-          AppDistribution.appDistribution().checkForUpdate(completion: { release, error in
-              if error != nil {
-                  // Handle error
-                  return
-              }
 
-              guard let release = release else {
-                return
-              }
-              
-              UIApplication.shared.open(release.downloadURL)
-              result(-1)
-          })
-          
       case "isTesterSignedIn":
           result(AppDistribution.appDistribution().isTesterSignedIn)
-          
+
       case "signInTester":
           AppDistribution.appDistribution().signInTester(completion: {error in
               if error != nil {
                   // Handle error
                   return
               }
-              
+
               result(nil)
           })
-          
+
       case "signOutTester":
           AppDistribution.appDistribution().signOutTester()
           result(nil)
-          
+
       default:
           result(nil)
     }

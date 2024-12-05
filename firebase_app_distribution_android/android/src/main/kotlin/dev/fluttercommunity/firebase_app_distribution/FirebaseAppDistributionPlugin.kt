@@ -34,10 +34,6 @@ class FirebaseAppDistributionPlugin : FlutterPlugin, MethodCallHandler {
                     result.error("CHECK_FAILED", "Can not check for new release", "checkForNewRelease() failed with $it")
                 }
             }
-            "downloadUpdate" -> {
-                firebaseAppDistribution.updateApp()
-                result.success(-1)
-            }
             "isTesterSignedIn" -> {
                 result.success(firebaseAppDistribution.isTesterSignedIn)
             }

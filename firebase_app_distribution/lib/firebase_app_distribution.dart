@@ -15,13 +15,6 @@ Future<bool> isNewReleaseAvailable() {
   return _platform.isNewReleaseAvailable();
 }
 
-/// Download the new release.
-/// Returns a stream of download progress if available on the platform,
-/// else returns -1.
-Stream<double> downloadUpdate() {
-  return _platform.downloadUpdate();
-}
-
 /// Checks if tester is signed in.
 Future<bool> isTesterSignedIn() {
   return _platform.isTesterSignedIn();
@@ -30,4 +23,9 @@ Future<bool> isTesterSignedIn() {
 /// Sign in a tester without automatically checking for update.
 Future<void> signInTester() {
   return _platform.signInTester();
+}
+
+/// Sign out a tester without automatically checking for update.
+Future<void> signOutTester() {
+  return _platform.signOutTester();
 }
