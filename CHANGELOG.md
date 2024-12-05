@@ -1,0 +1,52 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## 2024-12-05
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
+ - [`firebase_app_distribution` - `v1.1.0`](#firebase_app_distribution---v110)
+ - [`firebase_app_distribution_android` - `v1.1.0`](#firebase_app_distribution_android---v110)
+ - [`firebase_app_distribution_ios` - `v1.1.0`](#firebase_app_distribution_ios---v110)
+ - [`firebase_app_distribution_platform_interface` - `v1.1.0`](#firebase_app_distribution_platform_interface---v110)
+
+---
+
+#### `firebase_app_distribution` - `v1.1.0`
+
+ - **FEAT**: bulk changes.
+ - **FEAT**: start adding new methods.
+ - **FEAT**: start adding updateIfNewReleaseAvailable.
+
+#### `firebase_app_distribution_android` - `v1.1.0`
+
+ - **FIX**: packages.
+ - **FIX**: packages.
+ - **FEAT**: bulk changes.
+ - **FEAT**: implement.
+ - **FEAT**: start adding new methods.
+ - **FEAT**: start adding updateIfNewReleaseAvailable.
+
+#### `firebase_app_distribution_ios` - `v1.1.0`
+
+ - **FEAT**: bulk changes.
+ - **FEAT**: implement.
+ - **FEAT**: start adding new methods.
+ - **FEAT**: start adding updateIfNewReleaseAvailable.
+
+#### `firebase_app_distribution_platform_interface` - `v1.1.0`
+
+ - **FEAT**: bulk changes.
+ - **FEAT**: start adding new methods.
+ - **FEAT**: start adding updateIfNewReleaseAvailable.
+
