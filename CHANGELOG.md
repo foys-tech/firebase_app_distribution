@@ -15,6 +15,42 @@ Packages with breaking changes:
 
 Packages with other changes:
 
+ - [`firebase_app_distribution` - `v1.1.1`](#firebase_app_distribution---v111)
+ - [`firebase_app_distribution_android` - `v1.1.1`](#firebase_app_distribution_android---v111)
+ - [`firebase_app_distribution_ios` - `v1.1.1`](#firebase_app_distribution_ios---v111)
+ - [`firebase_app_distribution_platform_interface` - `v1.1.1`](#firebase_app_distribution_platform_interface---v111)
+
+---
+
+#### `firebase_app_distribution` - `v1.1.1`
+
+ - **DOCS**: change READMEs.
+
+#### `firebase_app_distribution_android` - `v1.1.1`
+
+ - **DOCS**: change READMEs.
+
+#### `firebase_app_distribution_ios` - `v1.1.1`
+
+ - **DOCS**: change READMEs.
+
+#### `firebase_app_distribution_platform_interface` - `v1.1.1`
+
+ - **DOCS**: change READMEs.
+
+
+## 2024-12-05
+
+### Changes
+
+---
+
+Packages with breaking changes:
+
+ - There are no breaking changes in this release.
+
+Packages with other changes:
+
  - [`firebase_app_distribution` - `v1.1.0`](#firebase_app_distribution---v110)
  - [`firebase_app_distribution_android` - `v1.1.0`](#firebase_app_distribution_android---v110)
  - [`firebase_app_distribution_ios` - `v1.1.0`](#firebase_app_distribution_ios---v110)

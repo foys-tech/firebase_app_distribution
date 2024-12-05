@@ -1,3 +1,7 @@
+## 1.1.1
+
+ - **DOCS**: change READMEs.
+
 ## 1.1.0
 
  - **FIX**: packages.
