@@ -1,7 +1,8 @@
 name: firebase_app_distribution_android
 description: Android implementation of the firebase_app_distribution plugin
-version: 0.1.0+1
-publish_to: none
+version: 1.0.0
+homepage: https://github.com/tpucci/firebase_app_distribution
+repository: https://github.com/tpucci/firebase_app_distribution
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -18,8 +19,7 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_app_distribution_platform_interface:
-    path: ../firebase_app_distribution_platform_interface
+  firebase_app_distribution_platform_interface: 1.0.0
 
 dev_dependencies:
   flutter_test:
