@@ -1,8 +1,0 @@
-name: firebase_app_distribution
-
-packages:
-  - firebase_app_distribution*
-
-ide:
-  intellij:
-    enabled: false
