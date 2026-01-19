@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.dependency 'Flutter'
 
   s.dependency 'firebase_core'
-  s.dependency 'FirebaseAppDistribution'
+  s.dependency 'Firebase/AppDistribution'
   s.static_framework = true
 
   s.platform = :ios, '9.0'
