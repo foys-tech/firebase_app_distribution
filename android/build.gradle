@@ -67,6 +67,6 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation("com.google.firebase:firebase-appdistribution-api")
-    implementation("com.google.firebase:firebase-appdistribution")
+    implementation "com.google.firebase:firebase-appdistribution-api"
+    implementation "com.google.firebase:firebase-appdistribution"
 }
